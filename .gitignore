@@ -1,0 +1,43 @@
+# Ignore les répertoires générés par Cargo
+/target/
+
+# Ignore les fichiers de debug spécifiques à certains éditeurs (VSCode, IntelliJ, etc.)
+**/*.rs.bk
+**/*.swp
+**/*.tmp
+
+# Ignore les fichiers générés pour les tests ou benchmarks
+/tests/target/
+/benches/target/
+/examples/target/
+
+# Ignore les fichiers de configuration ou artefacts de compilation temporaires
+Cargo.lock
+Cargo.toml.bak
+
+# Ignore les fichiers de couverture de code générés par `cargo test` avec outils comme `tarpaulin`
+/coverage/
+
+# Fichiers de log et sorties d'outils externes
+*.log
+
+# Ignore les artefacts de compilation (ex : fichiers binaires compilés)
+*.exe
+*.out
+*.dSYM/      # Spécifique aux builds sur macOS
+
+# Ignore les fichiers spécifiques aux éditeurs de texte et IDE
+.idea/
+.vscode/
+*.iml
+
+# Ignore les artefacts liés à Rust `rustc` ou `clippy`
+/target/debug/
+/target/release/
+/target/doc/
+/target/rls/
+/target/cov/
+
+# Ignore les fichiers d'environnement ou secrets
+.env
+.env.*
